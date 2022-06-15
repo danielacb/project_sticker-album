@@ -72,7 +72,7 @@ export default function Login() {
     setError(error?.message);
     setIsLoading(false);
 
-    if (user && !error) router.push("/confirm-email");
+    if (user && !error) router.push("/");
   };
 
   const handleSubmit = (e: FormEvent<ProjectFormElements>) => {
