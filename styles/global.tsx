@@ -22,6 +22,10 @@ const GlobalStyles = () => {
         button {
           color: ${theme.colors.white};
         }
+
+        a {
+          text-decoration: none;
+        }
       `}
     />
   );

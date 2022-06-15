@@ -13,6 +13,7 @@ export default function MainNav() {
             width={65}
           />
         </a>
+        <Logout href="/logout">sair</Logout>
       </Container>
     </Wrapper>
   );
@@ -23,5 +24,15 @@ const Wrapper = styled.nav`
     width: 100%;
     padding: 12px 24px;
     background-color: ${theme.colors.primaryDark};
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   `}
+`;
+
+const Logout = styled.a`
+  color: ${({ theme }) => theme.colors.white};
 `;
